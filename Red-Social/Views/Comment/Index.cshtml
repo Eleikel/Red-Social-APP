@@ -1,0 +1,43 @@
+﻿@using Red_Social.Core.Application.ViewModels.Comments;
+@model List<CommentViewModel>
+@{
+    //bool editMode = Model.Id == 0 ? false : true;
+    //ViewData["Title"] = "Post";
+
+    //SavePostViewModel PostVm = new();
+}
+
+
+<div class="row">
+
+    @foreach (CommentViewModel item in Model)
+    {
+        <div class="col-md-8 mt-6">
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+
+
+
+
+                    <p class="card-text mb-auto h4 mt-2 mb-4">@item.Text</p>
+
+
+                </div>
+            </div>
+        </div>
+    }
+
+
+
+
+    @*       }*@
+</div>
+
+
+
+
+
+
+
+
+

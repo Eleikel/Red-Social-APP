@@ -1,0 +1,15 @@
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\bin\Debug\net5.0\RedSocial.Core.Application.deps.json
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\bin\Debug\net5.0\RedSocial.Core.Application.dll
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\bin\Debug\net5.0\RedSocial.Core.Application.pdb
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\bin\Debug\net5.0\Red-Social.Core.Domain.dll
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\bin\Debug\net5.0\Red-Social.Core.Domain.pdb
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.csproj.AssemblyReference.cache
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.AssemblyInfoInputs.cache
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.AssemblyInfo.cs
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.csproj.CoreCompileInputs.cache
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.csproj.CopyComplete
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.dll
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\refint\RedSocial.Core.Application.dll
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\RedSocial.Core.Application.pdb
+C:\Users\Eleikel\Desktop\ITLA\Programacion III\Mini Proyecto Red Social\Red-Social\Red-Social.Core.Application\obj\Debug\net5.0\ref\RedSocial.Core.Application.dll

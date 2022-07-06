@@ -1,0 +1,17 @@
+﻿@using Red_Social.Core.Application.ViewModels.Users
+@model VerifyViewModel
+
+
+
+<form method="post" asp-controller="User" asp-action="ValidateEmail">
+
+    @Html.ValidationSummary(false, "",new {@class = "text-danger"})
+
+    <div class="form-outline mb-4">
+        <label asp-for="VerificationCode" class="form-label" for="form3Example3">Confirmar Codigo del Email</label>
+        <input asp-for="VerificationCode" id="form3Example3" class="form-control" />
+
+        <button type="submit" class="btn btn-lg btn-block btn-success">Verificar </button>
+        <a asp-controller="User" asp-action="Index" class="btn btn-warning">Volver atras</a>
+    </div>
+</form>

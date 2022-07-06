@@ -1,0 +1,42 @@
+﻿@using Red_Social.Core.Application.ViewModels.Post;
+@model SavePostViewModel
+@{
+    ViewData["Title"] = "Eliminar Post";
+}
+
+<div class="row">
+
+    <div class="col-6 offset-3">
+        <div class="card">
+            <div class="card-header bg-danger text-light">
+                <h4>Estas seguro que desea eliminar este Post?</h4>
+            </div>
+            <div class="card-body">
+
+                <form method="post" asp-controller="Post" asp-action="DeletePost">
+
+                    <div class="mb-3 text-center">
+@*                        <label asp-for="@Model.File" name="File" class="form-label">Seleccione un archivo:</label>
+                        <input asp-for="@Model.File" name="File" class="form-control" />
+                        <span asp-validation-for="@Model.File" name="File" class="text-danger"></span>*@
+                        <img src="@Model.ImageUrl" style="width: 400px; height: 300px;">
+
+                    </div>
+
+                    <input type="hidden" asp-for="Id" />
+                    <div class="form-group">
+                        <label asp-for="@Model.Text" name="Text" class="text-primary">Contenido del Post:</label>
+                        <textarea asp-for="@Model.Text" name="Text" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <a asp-controller="Post" asp-action="Index" class="btn btn-warning">Cancelar</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+

@@ -17,16 +17,17 @@ namespace Red_Social.Controllers
         private readonly ValidateUserSession _validateUserSession;
         private readonly IUploadFileService _uploadFileService;
 
-        public PostController(IPostService postService, ValidateUserSession validateUserSession, IUploadFileService uploadFileService)
+        public PostController(IPostService postService, ValidateUserSession validateUserSession, IUploadFileService uploadFileService, ICommentService commentService)
         {
             _postService = postService;
             _validateUserSession = validateUserSession;
             _uploadFileService = uploadFileService;
+            _commentService = commentService;
         }
 
 
 
-        
+
         public async Task<IActionResult> Index(SavePostViewModel vm)
         {
             if (!_validateUserSession.HasUser())
@@ -35,6 +36,8 @@ namespace Red_Social.Controllers
             }
 
             ViewBag.Posts = await _postService.GetAllViewModel();
+            ViewBag.Comments = await _commentService.GetAllViewModel();
+
 
             return View(vm);
 
@@ -61,9 +64,9 @@ namespace Red_Social.Controllers
 
             if (!ModelState.IsValid)
             {
-                //ModelState.AddModelError("", $"Debes Ingresar");
                 return RedirectToAction("Index", vm);
             }
+
 
             SavePostViewModel productVm = await _postService.Add(vm);
 
@@ -73,6 +76,7 @@ namespace Red_Social.Controllers
 
                 await _postService.Update(productVm, productVm.Id);
             }
+
 
             return RedirectToAction("Index");
         }
@@ -153,74 +157,6 @@ namespace Red_Social.Controllers
 
             return RedirectToRoute(new { controller = "Post", action = "Index" });
         }
-
-
-
-        //public  IActionResult Comment()
-        //{
-        //    //return RedirectToRoute(new { controller = "User", action = "Index" });
-        //    return View("Index");
-
-        //}
-
-        //[HttpPost]
-        //public async Task<IActionResult> Comment(SaveCommentViewModel vm)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        //return View("SaveCategory", vm);
-        //        return RedirectToAction("Index", vm);
-
-        //    }
-
-        //    await _commentService.Add(vm);
-        //    return RedirectToRoute(new { controller = "Post", action = "Index" });
-        //}
-
-
-
-
-
-
-        ////Comments
-        //public IActionResult Comment()
-        //{
-        //    if (!_validateUserSession.HasUser())
-        //    {
-        //        return RedirectToRoute(new { controller = "User", action = "Index" });
-        //    }
-
-        //    return View("Index", new PostViewModel());
-        //}
-
-
-
-
-        //[HttpPost]
-        //public async Task<IActionResult> Comment(SavePostViewModel vm)
-        //{
-        //    if (!_validateUserSession.HasUser())
-        //    {
-        //        return RedirectToRoute(new { controller = "User", action = "Index" });
-        //    }
-
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return RedirectToAction("Index", vm);
-        //    }
-
-        //    SavePostViewModel productVm = await _postService.Add(vm);
-
-        //    if (productVm.Id != 0 && productVm != null)
-        //    {
-        //        productVm.ImageUrl = _uploadFileService.UploadFile(vm.File, productVm.Id);
-
-        //        await _postService.Update(productVm, productVm.Id);
-        //    }
-
-        //    return RedirectToAction("Index");
-        //}
-
 
 
 

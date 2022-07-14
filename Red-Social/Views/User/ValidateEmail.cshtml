@@ -7,11 +7,28 @@
 
     @Html.ValidationSummary(false, "",new {@class = "text-danger"})
 
-    <div class="form-outline mb-4">
-        <label asp-for="VerificationCode" class="form-label" for="form3Example3">Confirmar Codigo del Email</label>
+    <div class="card mb-5">
+        <div class="card-body">
+            <ul>
+                <li class="h4">Pasos Para Confirmar E-Mail</li>
+                <li class="list-unstyled">1. Entrar a su servicio de Correo</li>
+                <li class="list-unstyled">2. Buscar el codigo de Confirmacion en el inbox</li>
+                <li class="list-unstyled">3. Pegar el codigo de Confirmacion en la Caja de Texto</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+    <div class="form-outline mb-4 ">
+        <label asp-for="VerificationCode" class="form-label text-primary" for="form3Example3">Confirmar Codigo del Email</label>
         <input asp-for="VerificationCode" id="form3Example3" class="form-control" />
 
-        <button type="submit" class="btn btn-lg btn-block btn-success">Verificar </button>
-        <a asp-controller="User" asp-action="Index" class="btn btn-warning">Volver atras</a>
+        <div class="d-flex text-center justify-content-center mt-4">
+
+            <button type="submit" class="btn text-center btn-success">Verificar </button>
+            <a asp-controller="User" asp-action="Index" class="btn btn-warning ml-2">Volver atras</a>
+        </div>
+
     </div>
 </form>

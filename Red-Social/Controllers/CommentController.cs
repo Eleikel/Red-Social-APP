@@ -1,6 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Red_Social.Core.Application.Helpers;
 using Red_Social.Core.Application.Interfaces.Services;
 using Red_Social.Core.Application.ViewModels.Comments;
+using Red_Social.Core.Application.ViewModels.Post;
+using Red_Social.Core.Application.ViewModels.Users;
+using Red_Social.Middleware;
 using System.Threading.Tasks;
 
 namespace Red_Social.Controllers
@@ -8,40 +13,54 @@ namespace Red_Social.Controllers
     public class CommentController : Controller
     {
         private readonly ICommentService _commentService;
+        private readonly IPostService _postService;
+        public readonly ValidateUserSession _validateUserSession;
+        private readonly UserViewModel userViewModel;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CommentController(ICommentService commentService)
+
+
+        public CommentController(ICommentService commentService, IPostService postService, IHttpContextAccessor httpContextAccessor, ValidateUserSession validateUserSession)
         {
+            _validateUserSession = validateUserSession;
             _commentService = commentService;
+            _postService = postService;
+            _httpContextAccessor = httpContextAccessor;
+            userViewModel = _httpContextAccessor.HttpContext.Session.Get<UserViewModel>("user");
+
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int Id)
         {
-            //return View();
-            return View(await _commentService.GetAllViewModel());
 
+            if (!_validateUserSession.HasUser())
+            {
+                return RedirectToRoute(new { controller = "User", action = "Index" });
+            }
+
+            ViewBag.Comments = await _commentService.GetAllViewModelWithInclude(Id);
+            ViewBag.PostId = Id;
+
+            return View(new SaveCommentViewModel());
         }
 
-        public IActionResult Create()
-        {
-            return View("SaveComment", new SaveCommentViewModel()); 
 
-
-            //SaveCommentViewModel vm = new();
-            //vm.Comments = await _commentService.GetAllViewModel();
-            //return View("SaveComment");
-        }
 
         [HttpPost]
         public async Task<IActionResult> Create(SaveCommentViewModel vm)
         {
-            if (!ModelState.IsValid)
+            if (!_validateUserSession.HasUser())
             {
-                //return View("SaveCategory", vm);
-                return RedirectToAction("SaveComment", vm);
-
+                return RedirectToRoute(new { controller = "User", action = "Index" });
             }
 
-            await _commentService.Add(vm);
-            return RedirectToRoute(new { controller = "Comment", action = "Index" });
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Index", vm);
+            }
+
+            SaveCommentViewModel CommentVm = await _commentService.Add(vm);
+
+            return RedirectToRoute(new { controller = "Comment", action = "Index", id= CommentVm.PostId });
         }
     }
 }

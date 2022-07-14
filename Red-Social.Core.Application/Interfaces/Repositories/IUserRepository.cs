@@ -12,6 +12,8 @@ namespace Red_Social.Core.Application.Interfaces.Repositories
     {
         Task<User> LoginAsync(LoginViewModel loginVm);
         Task<bool> ExistAync(string usuario);
+
+        Task<User> GetByIdWithIncludes(int id, List<string> list);
     }
 
 }

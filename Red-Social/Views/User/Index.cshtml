@@ -9,8 +9,6 @@
             border-top-right-radius: 0.5rem;
         }
 
-
-
         .rounded-bl-lg-5 {
             border-bottom-left-radius: 0.5rem;
         }
@@ -20,23 +18,23 @@
     <div class="card mb-3">
         <div class="row g-0 d-flex align-items-center">
             <div class="col-lg-4 d-none d-lg-flex">
-                <img src="https://s3images.coroflot.com/user_files/individual_files/large_1034266_a6053hjeuro6eezybm3mmlckh.jpg" alt="Trendy Pants and Shoes"
+                <img src="https://i0.wp.com/www.fcme.org/wp-content/uploads/Twitter-logo.jpg?fit=600%2C436&ssl=1" alt="Trendy Pants and Shoes"
                      class="w-100 rounded-t-5 rounded-tr-lg-0 rounded-bl-lg-5" />
             </div>
             <div class="col-lg-8">
                 <div class="card-body py-5 px-md-5 shadow-lg bg-white rounded">
-                    <h1 class="title text-center mb-5">Log In</h1>
+                    <h1 class="title text-center mb-5">Iniciar Session</h1>
                     <form method="post" asp-controller="User" asp-action="Index">
                         @Html.ValidationSummary(false, "",new {@class = "text-danger"})
                         <!-- Email input -->
                         <div class="form-outline mb-4">
-                            <label asp-for="Username" class="form-label" for="form2Example1">Username</label>
+                            <label asp-for="Username" class="form-label h5 text-primary" for="form2Example1">Username</label>
                             <input asp-for="Username" id="form2Example1" class="form-control" />
                         </div>
 
                         <!-- Password input -->
                         <div class="form-outline mb-4">
-                            <label asp-for="Password" class="form-label" for="form2Example2">Password</label>
+                            <label asp-for="Password" class="form-label h5 text-primary" for="form2Example2">Password</label>
                             <input asp-for="Password" type="password" id="form2Example2" class="form-control" />
                         </div>
 
@@ -46,10 +44,9 @@
 
                             <button type="submit" class="btn btn-lg btn-block btn-success">Iniciar Sesion</button>
                             <a asp-controller="User" asp-action="Register" class="btn btn-lg btn-block btn-primary">Registrarse</a>
-                            <a asp-controller="User" asp-action="RestorePassword" class="btn  btn-primary">Restore Password</a>
+                            <a asp-controller="User" asp-action="RestorePassword" class="btn btn-secondary mt-4">Restore Password</a>
 
-                            @*                             <a asp-controller="User" asp-action="ValidateEmail" class=" btn btn-primary ">Validate Email</a>
-                            *@
+
                         </div>
 
                     </form>

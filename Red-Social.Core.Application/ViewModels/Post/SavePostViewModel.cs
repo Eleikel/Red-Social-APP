@@ -18,12 +18,13 @@ namespace Red_Social.Core.Application.ViewModels.Post
 
         public string ImageUrl { get; set; }
 
-        [Required(ErrorMessage = "Debes ingresar el contenido del Post")]
+        //[Required(ErrorMessage = "Debes ingresar el contenido del Post")]
         [DataType(DataType.Upload)]
         public IFormFile File { get; set; }
 
         public int UserId { get; set; }
         public DateTime Created { get; set; }
+
 
 
     }

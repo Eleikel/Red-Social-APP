@@ -50,6 +50,8 @@ namespace Red_Social.Core.Application.Services
 
         public override async Task<SaveUserViewModel> Add(SaveUserViewModel vm)
         {
+            //vm.Password = PasswordEncryption.ComputedSha256Hash(vm.Password);
+
             SaveUserViewModel userVm = await base.Add(vm);
 
             await _emailService.SendAsync(new EmailRequest
@@ -71,8 +73,32 @@ namespace Red_Social.Core.Application.Services
         }
 
 
-        //entity.Password = PasswordEncryption.ComputedSha256Hash(entity.Password);
 
+
+        public async Task<List<int>> GetByIdWithFriends(int id)
+        {
+            var user = await _userRepository.GetByIdWithIncludes(id, new List<string> { "Users", "Friends" });
+            List<int> UserId = new();
+
+            foreach (var item in user.Users)
+            {
+                if (!UserId.Contains(item.Id))
+                {
+                    UserId.Add(item.Id);
+                }
+            }
+
+
+            foreach (var item in user.Friends)
+            {
+                if (!UserId.Contains(item.Id))
+                {
+                    UserId.Add(item.Id);
+                }
+            }
+
+            return UserId;
+        }
 
 
 
@@ -94,24 +120,6 @@ namespace Red_Social.Core.Application.Services
             }).ToList();
         }
 
-        //public async Task AutoPassWordGenerate(RestorePasswordViewModel Vm)
-        //{
 
-        //    string newPassword = string.Empty;
-        //    newPassword = Guid.NewGuid().ToString();
-
-        //    await _emailService.SendAsync(new EmailRequest
-        //    {
-        //        To = Vm.Email,
-        //        Subject = $"Welcome {Vm.Username} to Red Social App",
-        //        Body = $"<h1>Hello, </h1> <p>Your username is {Vm.Username}</p>" +
-        //         $"Your new Password is <b>{newPassword}</b>"
-        //    });
-        //}
-
-        //public Task RestorePassword()
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }

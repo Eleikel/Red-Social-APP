@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Red_Social.Core.Application.ViewModels;
 using Red_Social.Core.Application.ViewModels.Comments;
+using Red_Social.Core.Application.ViewModels.Friends;
 using Red_Social.Core.Application.ViewModels.Post;
 using Red_Social.Core.Application.ViewModels.Users;
 using Red_Social.Core.Domain.Entities;
@@ -58,8 +59,6 @@ namespace Red_Social.Core.Application.Mappings
                 .ForMember(x => x.Email, opt => opt.Ignore())
                 .ForMember(x => x.Phone, opt => opt.Ignore())
                 .ForMember(x => x.ProfilePhotoUrl, opt => opt.Ignore())
-                //.ForMember(x => x.Username, opt => opt.Ignore())
-                //.ForMember(x => x.Password, opt => opt.Ignore())
                 .ForMember(x => x.VerificationCode, opt => opt.Ignore());
 
 
@@ -68,7 +67,6 @@ namespace Red_Social.Core.Application.Mappings
                 .ForMember(x => x.UserName, opt => opt.Ignore())
                 .ForMember(x => x.UserPhoto, opt => opt.Ignore())
                 .ReverseMap()
-                //.ForMember(x => x.Created, opt => opt.Ignore())
                 .ForMember(x => x.CreatedBy, opt => opt.Ignore())
                 .ForMember(x => x.LastModified, opt => opt.Ignore())
                 .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
@@ -76,12 +74,10 @@ namespace Red_Social.Core.Application.Mappings
             CreateMap<Post, SavePostViewModel>()
                 .ForMember(x => x.File, opt => opt.Ignore())
                 .ReverseMap()
-                //.ForMember(x => x.Created, opt => opt.Ignore())
                 .ForMember(x => x.CreatedBy, opt => opt.Ignore())
                 .ForMember(x => x.LastModified, opt => opt.Ignore())
                 .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())
                 .ForMember(x => x.User, opt => opt.Ignore());
-                //.ForMember(x => x.Posts, opt => opt.Ignore());
 
 
 
@@ -96,6 +92,30 @@ namespace Red_Social.Core.Application.Mappings
 
 
             CreateMap<Comment, CommentViewModel>()
+                .ForMember(x => x.ProfilePhotoUrl, opt => opt.Ignore())
+                .ReverseMap()
+                .ForMember(x => x.Created, opt => opt.Ignore())
+                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                .ForMember(x => x.LastModified, opt => opt.Ignore())
+                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore());
+
+
+
+            CreateMap<Friend, SaveFriendViewModel>()
+                .ForMember(x => x.Username, opt => opt.Ignore()) //
+                .ReverseMap()
+                .ForMember(x => x.CreatedBy, opt => opt.Ignore())
+                .ForMember(x => x.LastModified, opt => opt.Ignore())
+                .ForMember(x => x.LastModifiedBy, opt => opt.Ignore())
+                .ForMember(x => x.User, opt => opt.Ignore())
+                .ForMember(x => x.Friendd, opt => opt.Ignore());
+
+
+            CreateMap<Friend, FriendViewModel>()
+                .ForMember(x => x.FriendName, opt => opt.Ignore())
+                .ForMember(x => x.FriendLastName, opt => opt.Ignore())
+                .ForMember(x => x.UserName, opt => opt.Ignore())
+                .ForMember(x => x.PhotoProfile, opt => opt.Ignore())
                 .ReverseMap()
                 .ForMember(x => x.Created, opt => opt.Ignore())
                 .ForMember(x => x.CreatedBy, opt => opt.Ignore())

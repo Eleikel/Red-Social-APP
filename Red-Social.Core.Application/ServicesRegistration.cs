@@ -21,6 +21,8 @@ namespace Red_Social.Core.Application
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IPostService, PostService>();
             services.AddTransient<ICommentService, CommentService>();
+            services.AddTransient<IFriendService, FriendService>();
+
             #endregion
         }
     }

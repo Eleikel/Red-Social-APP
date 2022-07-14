@@ -11,7 +11,6 @@ namespace Red_Social.Core.Application.ViewModels.Users
     {
         public int Id { get; set; }
 
-
         [Required(ErrorMessage = "Inserte el nombre de usuario")]
         [DataType(DataType.Text)]
         public string Username { get; set; }

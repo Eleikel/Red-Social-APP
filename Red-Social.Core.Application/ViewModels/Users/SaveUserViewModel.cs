@@ -42,8 +42,8 @@ namespace Red_Social.Core.Application.ViewModels.Users
         [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "Inserte un telefono")]
-        [DataType(DataType.Text)]
+
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "ha introducido un formato de telefono invalido.")]
         public string Phone { get; set; }
 
 

@@ -13,7 +13,7 @@ namespace Red_Social.Core.Application.Interfaces.Services
     public interface ICommentService : IGenericService<SaveCommentViewModel, CommentViewModel, Comment>
     {
 
-        Task<List<CommentViewModel>> GetAllViewModelWithInclude();
+        Task<List<CommentViewModel>> GetAllViewModelWithInclude(int postId);
 
     }
 }

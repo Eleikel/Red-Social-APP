@@ -15,6 +15,7 @@ namespace Red_Social.Core.Application.Interfaces.Services
         Task<bool> Exist(string category);
 
         //Task AutoPassWordGenerate(RestorePasswordViewModel Vm);
+        Task<List<int>> GetByIdWithFriends(int id);
 
     }
 }

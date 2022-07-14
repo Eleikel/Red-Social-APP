@@ -18,9 +18,9 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light morado border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="@(User!= null ? "Home" : "User")" asp-action="Index">Red Social</a>
+                <a class="navbar-brand text-white font-weight-bold" asp-area="" asp-controller="@(User!= null ? "Post" : "User")" asp-action="Index">Red Social</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,20 +30,20 @@
                         @if (User != null)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                <a class="nav-link text-white font-weight-bold" asp-area="" asp-controller="Friend" asp-action="Index">Amigos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Post" asp-action="Index">Post</a>
+                                <a class="nav-link text-white font-weight-bold" asp-area="" asp-controller="Post" asp-action="Index">Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="LogOut">Cerrar Session</a>
+                                <a class="nav-link text-white font-weight-bold" asp-area="" asp-controller="User" asp-action="LogOut">Cerrar Session</a>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Register">Registrarse</a>
+                                <a class="nav-link text-white font-weight-bold" asp-area="" asp-controller="User" asp-action="Register">Registrarse</a>
                             </li>
                         }
 
@@ -53,7 +53,8 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="px-4">
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -61,7 +62,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2022 - Red_Social - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2022 - Eleikel Red-Social  <a asp-area="" asp-controller="Home" asp-action="Privacy"></a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

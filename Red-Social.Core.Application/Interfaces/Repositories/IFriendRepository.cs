@@ -9,5 +9,9 @@ namespace Red_Social.Core.Application.Interfaces.Repositories
 {
     public interface IFriendRepository : IGenericRepository<Friend>
     {
+        Task<bool> ExistAync(string usuario);
+
+
+        Task<Friend> GetFriendAsync(int userId, int friendId);
     }
 }

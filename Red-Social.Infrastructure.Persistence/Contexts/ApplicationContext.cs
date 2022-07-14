@@ -68,8 +68,9 @@ namespace Emarket.Infrastructure.Persistence.Contexts
             modelBuilder.Entity<User>()
                 .HasKey(user => user.Id);
 
-            modelBuilder.Entity<User>()
-                .HasKey(user => user.Id);
+            modelBuilder.Entity<Friend>()
+                 //.HasKey(o => new { o.Id, o.FriendId });
+            .HasKey(friend => friend.Id);
 
             modelBuilder.Entity<Comment>()
                 .HasKey(comment => comment.Id);
@@ -81,19 +82,7 @@ namespace Emarket.Infrastructure.Persistence.Contexts
 
 
             #region ==> Relationships or Foreign Keys
-            //modelBuilder.Entity<User>()
-            //    .HasKey(t => new {t.Frie})
-            //    .HasMany<Friend>(user => user.Friends)
-            //    .WithMany(friend => friend.Friends)
-            //    .HasForeignKey(advertisement => advertisement.)
-            //    .OnDelete(DeleteBehavior.Cascade);
 
-            //modelBuilder.Entity<User>().HasMany(
-            //            user => user.Friends).WithMany(friend => friend.Users).
-            //            UsingEntity<Dictionary<string, object>>(
-            //                "M2MTable",
-            //                b => b.HasOne<Author>().WithMany().HasForeignKey("AuthorId"),
-            //                b => b.HasOne<Book>().WithMany().HasForeignKey("BookId"));
 
             modelBuilder.Entity<User>()
                 .HasMany<Comment>(user => user.Comments)
@@ -107,9 +96,7 @@ namespace Emarket.Infrastructure.Persistence.Contexts
                 .HasForeignKey(post => post.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-            //Aqui la Many to many de User
-           // modelBuilder.Entity<UserFriend>()
-           //.HasKey(e => new { e.UserId, e.FriendId });  //OJO
+
 
 
             modelBuilder.Entity<User>()
@@ -138,27 +125,6 @@ namespace Emarket.Infrastructure.Persistence.Contexts
                 .HasForeignKey(comment => comment.PostId)
                 .OnDelete(DeleteBehavior.Cascade);
 
-
-
-
-
-
-
-
-    //        modelBuilder.Entity<Comment>()
-    //.HasMany<Post>(comment => comment.Post)
-    //.WithOne(post => post.Post)
-    //.HasForeignKey(comment => comment.PostId)
-    //.OnDelete(DeleteBehavior.Cascade);
-
-
-
-            //Esto puede causar error
-            //modelBuilder.Entity<Post>()
-            //    .HasOne<Post>(post => post.Posts)
-            //    .WithOne(post => post.Posts)
-            //    .HasForeignKey<Post>(post => post.IdPostShared)
-            //    .OnDelete(DeleteBehavior.Cascade);
 
 
 

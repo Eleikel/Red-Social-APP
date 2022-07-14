@@ -20,18 +20,23 @@ namespace Red_Social.Core.Application.Services
     public class PostService : GenericService<SavePostViewModel, PostViewModel, Post>, IPostService
     {
         private readonly IPostRepository _postRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IUserService _userService;
         private readonly IMapper _mapper;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly UserViewModel userViewModel;
 
 
 
-        public PostService(IPostRepository postRepository, IMapper mapper, IHttpContextAccessor httpContextAccessor) : base(postRepository, mapper)
+        public PostService(IPostRepository postRepository, IMapper mapper, IHttpContextAccessor httpContextAccessor, IUserRepository userRepository, IUserService userService) : base(postRepository, mapper)
         {
+            _userService = userService;
             _postRepository = postRepository;
+            _userRepository = userRepository;
             _mapper = mapper;
             _httpContextAccessor = httpContextAccessor;
             userViewModel = _httpContextAccessor.HttpContext.Session.Get<UserViewModel>("user");
+
 
         }
 
@@ -62,19 +67,40 @@ namespace Red_Social.Core.Application.Services
                 UserId = post.User.Id,
                 UserName = post.User.Name,
                 UserPhoto = post.User.ProfilePhotoUrl,
-                Created = post.Created
+                Created = post.Created,                
             }).ToList();
+        }
 
 
+        public async Task<List<PostViewModel>> GetPostList(int id)
+        {
+            var postList = await _postRepository.GetAllWithIncludeAsync(new List<string> { "User"});
+            var IdList = await _userService.GetByIdWithFriends(id);
+            List<Post> posts = new List<Post>();
+
+            foreach (var item in IdList)
+            {
+                posts.AddRange(postList.Where(post => post.UserId == item));
+            }
+
+             posts = posts.OrderByDescending(post => post.Created).ToList();
+
+            return _mapper.Map<List<PostViewModel>>(posts);
         }
 
 
 
-        public async Task<List<PostViewModel>> GetAllViewModelWithInclude()
+
+
+        //Obtener los Post de los amigos
+        public async Task<List<PostViewModel>> GetAllViewModelWithInclude(int friendId)
         {
             var postList = await _postRepository.GetAllWithIncludeAsync(new List<string> { "User" });
 
-            return postList.Select(post => new PostViewModel
+            //var usuarioActual = await _userRepository.GetByIdAsync(userViewModel.Id);
+
+
+            return postList.Where(friend => friend.UserId == friendId).Select(post => new PostViewModel
             {
                 Id = post.Id,
                 Text = post.Text,
@@ -82,15 +108,10 @@ namespace Red_Social.Core.Application.Services
                 UserId = post.User.Id,
                 UserName = post.User.Name,
                 UserPhoto = post.User.ProfilePhotoUrl,
-                Created = post.Created
+                Created = post.Created,
+                
             }).ToList();
         }
 
-        //public async Task<PostViewModel> AddPost(PostViewModel vm)
-        //{
-        //    vm.UserId = userViewModel.Id;
-        //    return await base.Add(vm);
-
-        //}
     }
 }

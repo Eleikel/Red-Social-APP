@@ -42,21 +42,21 @@ namespace Application.Services
 
 
 
-        public async Task<List<CommentViewModel>> GetAllViewModelWithInclude()
+        public async Task<List<CommentViewModel>> GetAllViewModelWithInclude(int postId) 
         {
-            var commentList = await _commentRepository.GetAllWithIncludeAsync(new List<string> { "User" });
+            //
+            var commentList = await _commentRepository.GetAllWithIncludeAsync(new List<string> { "Post", "User" });
 
             //.Where(comment => comment.UserId == userViewModel.Id).
-            return commentList.Select(comment => new CommentViewModel
+            return commentList.Where(comment => comment.PostId == postId).Select(comment => new CommentViewModel
             {
                 Id = comment.Id,
                 Text = comment.Text,
-                UserId = comment.UserId, //...
-                PostId = comment.PostId
+                UserId = comment.User.Id, //...
+                PostId = comment.Post.Id,
+                ProfilePhotoUrl = comment.User.ProfilePhotoUrl
             }).ToList();
         }
-
-
 
     }
 }

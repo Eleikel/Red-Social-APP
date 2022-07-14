@@ -33,10 +33,10 @@ namespace Red_Social.Controllers
         //Iniciar Session or Log In
         public IActionResult Index()
         {
-            //if (_validateUserSession.HasUser())
-            //{
-            //    return RedirectToRoute(new { controller = "Home", action = "Index" });
-            //}
+            if (_validateUserSession.HasUser())
+            {
+                return RedirectToRoute(new { controller = "Post", action = "Index" });
+            }
 
             return View("Index");
         }
@@ -45,15 +45,21 @@ namespace Red_Social.Controllers
         public async Task<IActionResult> Index(LoginViewModel loginVm)
         {
 
+            if (_validateUserSession.HasUser())
+            {
+                return RedirectToRoute(new { controller = "Post", action = "Index" });
+            }
 
             if (!ModelState.IsValid)
             {
                 return View(loginVm);
             }
 
+
+
             UserViewModel userVm = await _userService.Login(loginVm);
 
-            if (userVm != null)
+            if (userVm != null )
             {
                 if (userVm.VerificationCode != null && userVm.Password == userVm.VerificationCode)
                 {
@@ -79,10 +85,10 @@ namespace Red_Social.Controllers
 
         public IActionResult Register()
         {
-            //if (_validateUserSession.HasUser())
-            //{
-            //    return RedirectToRoute(new { controller = "Home", action = "Index" });
-            //}
+            if (_validateUserSession.HasUser())
+            {
+                return RedirectToRoute(new { controller = "Post", action = "Index" });
+            }
 
             return View(new SaveUserViewModel());
         }
@@ -127,6 +133,9 @@ namespace Red_Social.Controllers
             return View("ValidateEmail");
         }
 
+
+
+
         [HttpPost]
         public async Task<IActionResult> ValidateEmail(VerifyViewModel vm, int id)
         {
@@ -154,6 +163,9 @@ namespace Red_Social.Controllers
         }
 
 
+
+
+
         public IActionResult RestorePassword(RestorePasswordViewModel vm/*, int id*/)
         {
             return View("RestorePassword");
@@ -163,6 +175,10 @@ namespace Red_Social.Controllers
         public async Task<IActionResult> RestorePassword(RestorePasswordViewModel vm, int id)
         {
 
+            if (!ModelState.IsValid)
+            {
+                return View("RestorePassword", vm);
+            }
             //var query = await
             //SaveUserViewModel userVm = await _userService.GetByIdSaveViewModel(id);
             //var userName = vm.Username;
@@ -174,12 +190,12 @@ namespace Red_Social.Controllers
             }
             else
             {
-                var get = await _userService.GetAllViewModel();
+                var getAllUser = await _userService.GetAllViewModel();
 
                 var name = String.Empty;
                 int Id = 0;
 
-                foreach (var item in get)
+                foreach (var item in getAllUser)
                 {
                     if (item.Username == vm.Username)
                     {
@@ -197,7 +213,6 @@ namespace Red_Social.Controllers
                 userVm.Password = newPassword;
                 userVm.VerificationCode = userVm.Password;
 
-                await _userService.Update(userVm, userVm.Id);
 
 
                 await _emailService.SendAsync(new EmailRequest
@@ -208,6 +223,7 @@ namespace Red_Social.Controllers
                         $"Your new Password is <b>{newPassword}</b>"
                 });
 
+                await _userService.Update(userVm, userVm.Id);
 
 
                 //RestorePasswordViewModel userVm = await _userService.AutoPassWordGenerate(vm);
@@ -227,8 +243,6 @@ namespace Red_Social.Controllers
             }
 
             //return RedirectToRoute(new { controller = "User", action = "Index" });
-
-
         }
 
 
@@ -237,60 +251,6 @@ namespace Red_Social.Controllers
             HttpContext.Session.Remove("user");
             return RedirectToRoute(new { controller = "User", action = "Index" });
         }
-
-
-
-
-        ////Upload File
-        //private string UploadFile(IFormFile file, int id, bool isEditMode = false, string imageUrl = "")
-        //{
-        //    if (isEditMode)
-        //    {
-        //        if (file == null)
-        //        {
-        //            return imageUrl;
-        //        }
-        //    }
-
-        //    //get directory path
-        //    string basePath = $"/Images/Users/{id}";
-        //    string path = Path.Combine(Directory.GetCurrentDirectory(), $"wwwroot{basePath}");
-
-        //    //Create folder if not exist
-        //    if (!Directory.Exists(path))
-        //    {
-        //        Directory.CreateDirectory(path);
-        //    }
-
-        //    //get file path
-        //    Guid guid = Guid.NewGuid();
-        //    FileInfo fileInfo = new(file.FileName);
-        //    string fileName = guid + fileInfo.Extension;
-
-        //    string filenameWithPath = Path.Combine(path, fileName);
-
-        //    using (var stream = new FileStream(filenameWithPath, FileMode.Create))
-        //    {
-        //        file.CopyTo(stream);
-        //    }
-
-
-        //    //Borrar la Imagen Antigua cuando editamos
-        //    if (isEditMode)
-        //    {
-        //        string[] oldImagePart = imageUrl.Split("/");
-        //        string oldImageName = oldImagePart[^1];   // '^1' = Ultima posicion
-        //        string completeImageOldPath = Path.Combine(path, oldImageName);
-
-        //        if (System.IO.File.Exists(completeImageOldPath))
-        //        {
-        //            System.IO.File.Delete(completeImageOldPath);
-        //        }
-        //    }
-
-        //    return $"{basePath}/{fileName}";
-        //}
-
 
 
     }

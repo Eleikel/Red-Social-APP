@@ -1,4 +1,5 @@
 ﻿using Emarket.Infrastructure.Persistence.Contexts;
+using Microsoft.EntityFrameworkCore;
 using Red_Social.Core.Application.Interfaces.Repositories;
 using Red_Social.Core.Domain.Entities;
 using System;
@@ -19,5 +20,27 @@ namespace Red_Social.Infrastructure.Persistence.Repository
         {
             _dbContext = dbContext;
         }
+
+        public Task<bool> ExistAync(string usuario)
+        {
+            throw new NotImplementedException();
+        }
+
+
+        public override async Task<Friend> GetByIdAsync(int id)
+        {
+            return await _dbContext.Set<Friend>().FindAsync(id);
+        }
+
+        public async Task<Friend> GetFriendAsync(int userId, int friendId)
+        {
+            return await _dbContext.Set<Friend>().FirstOrDefaultAsync(friend => friend.UserId == userId && friend.FriendId == friendId);
+        
+        }
+
+
+
+
+
     }
 }

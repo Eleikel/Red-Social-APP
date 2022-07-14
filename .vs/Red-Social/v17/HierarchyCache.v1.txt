@@ -6,27 +6,19 @@ i:{00000000-0000-0000-0000-000000000000}:Source
 i:{78d408b0-cc4a-465b-8de3-3061092db8f6}:Core
 ++RedSocial.Core.Application
 i:{6e128a03-8137-4671-ac81-8c4135bbfda7}:RedSocial.Core.Application
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\bin\debug\net5.0\redsocial.core.application.dll
-i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\bin\debug\net5.0\redsocial.core.application.dll
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\redsocial.core.application.csproj
+i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\redsocial.core.application.csproj
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\redsocial.core.application.csproj
 ++Dependencias
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>336
-i:{40535adf-606e-4cc3-9668-c18f7a377199}:>334
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>443
-i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>335
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1766
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1141
+i:{40535adf-606e-4cc3-9668-c18f7a377199}:>1143
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1144
+i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1142
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1838
 ++Dtos
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\dtos\
-++Email
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\dtos\email\
-++EmailRequest.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\dtos\email\emailrequest.cs
 ++Helpers
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\helpers\
-++PasswordEncryption.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\helpers\passwordencryption.cs
-++SessionHelper.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\helpers\sessionhelper.cs
 ++Interfaces
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\interfaces\
 ++Repositories
@@ -65,6 +57,8 @@ i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programac
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\mappings\generalprofile.cs
 ++CommentService.cs
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\services\commentservice.cs
+++FriendService.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\services\friendservice.cs
 ++GenericService.cs
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\services\genericservice.cs
 ++PostService.cs
@@ -79,6 +73,12 @@ i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programac
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\comments\commentviewmodel.cs
 ++SaveCommentViewModel.cs
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\comments\savecommentviewmodel.cs
+++Friends
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\friends\
+++FriendViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\friends\friendviewmodel.cs
+++SaveFriendViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\friends\savefriendviewmodel.cs
 ++Post
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\post\
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\post\
@@ -89,6 +89,16 @@ i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programac
 ++Users
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\
+++LoginViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\loginviewmodel.cs
+++RestorePasswordViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\restorepasswordviewmodel.cs
+++SaveUserViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\saveuserviewmodel.cs
+++UserViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\userviewmodel.cs
+++VerifyViewModel.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\verifyviewmodel.cs
 ++ServicesRegistration.cs
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\servicesregistration.cs
 ++Analizadores
@@ -113,16 +123,12 @@ i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:proyectos
 i:{9a944725-72b5-47ab-a306-0852bb080ca5}:proyectos
 i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:proyectos
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:proyectos
-++LoginViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\loginviewmodel.cs
-++RestorePasswordViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\restorepasswordviewmodel.cs
-++SaveUserViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\saveuserviewmodel.cs
-++UserViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\userviewmodel.cs
-++VerifyViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\users\verifyviewmodel.cs
+++Email
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\dtos\email\
+++PasswordEncryption.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\helpers\passwordencryption.cs
+++SessionHelper.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\helpers\sessionhelper.cs
 ++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
 i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 i:{40535adf-606e-4cc3-9668-c18f7a377199}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
@@ -147,29 +153,31 @@ i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programac
 i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.shared\microsoft.netcore.app
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\microsoft.netcore.app
 ++AutoMapper (11.0.1)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1782
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1870
 ++AutoMapper.Extensions.Microsoft.DependencyInjection (11.0.0)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1778
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1864
 ++Microsoft.AspNetCore.Http (2.2.2)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1783
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1878
 ++Microsoft.AspNetCore.Http.Extensions (2.2.0)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1781
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1868
 ++Microsoft.EntityFrameworkCore (5.0.17)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1776
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1862
 ++Microsoft.EntityFrameworkCore.SqlServer (5.0.17)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1777
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1811
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1863
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1873
 ++Microsoft.Extensions.Options.ConfigurationExtensions (6.0.0)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1780
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1813
-i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1798
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1866
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1876
+i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1869
 ++Newtonsoft.Json (13.0.1)
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1779
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:>1865
 ++Red-Social.Core.Domain
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\bin\debug\net5.0\red-social.core.domain.dll
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\red-social.core.domain.csproj
 i:{6e128a03-8137-4671-ac81-8c4135bbfda7}:Red-Social.Core.Domain
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\bin\debug\net5.0\red-social.core.domain.dll
-i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\bin\debug\net5.0\red-social.core.domain.dll
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\red-social.core.domain.csproj
+i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\red-social.core.domain.csproj
+++EmailRequest.cs
+i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\dtos\email\emailrequest.cs
 ++Commom
 i:{40535adf-606e-4cc3-9668-c18f7a377199}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.domain\commom\
 ++Entities
@@ -199,6 +207,12 @@ i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programac
 i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\contexts\applicationcontext.cs
 ++Migrations
 i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\
+++20220707054635_Initial.cs
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\20220707054635_initial.cs
+++20220707054635_Initial.Designer.cs
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\20220707054635_initial.designer.cs
+++ApplicationContextModelSnapshot.cs
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\applicationcontextmodelsnapshot.cs
 ++Repository
 i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\repository\
 ++CommentRepository.cs
@@ -214,15 +228,11 @@ i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programac
 ++ServiceRegistration.cs
 i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\serviceregistration.cs
 i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.shared\serviceregistration.cs
-++20220706153021_Initial.cs
-++ApplicationContextModelSnapshot.cs
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\applicationcontextmodelsnapshot.cs
 ++Microsoft.EntityFrameworkCore.Design (5.0.17)
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1812
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1830
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1875
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1899
 ++Microsoft.EntityFrameworkCore.Tools (5.0.17)
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1814
-++20220706153021_Initial.Designer.cs
+i:{9a944725-72b5-47ab-a306-0852bb080ca5}:>1877
 ++Red-Social.Infrastructure.Shared
 i:{dcbba270-07c4-4313-8562-c599c0deb4c0}:Red-Social.Infrastructure.Shared
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.shared\red-social.infrastructure.shared.csproj
@@ -231,39 +241,25 @@ i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programac
 ++UploadFileService.cs
 i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.shared\services\uploadfileservice.cs
 ++MailKit (3.3.0)
-i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1800
+i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1874
 ++MimeKit (3.3.0)
-i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1799
+i:{4d792eae-b4ac-43aa-b123-dcc0469b0875}:>1871
 ++WebApp
 i:{78d408b0-cc4a-465b-8de3-3061092db8f6}:WebApp
 ++RedSocial
 i:{9ed0ca01-3fa3-4448-8553-086dd61dd336}:RedSocial
 ++Connected Services 
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1767
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1839
 ++Properties
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\properties\
 ++wwwroot
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\
-++css
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\css\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\css\
-++site.css
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\css\site.css
-++Images
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\
-++Products
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\
-++js
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\js\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\js\
-++lib
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\
-++favicon.ico
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\favicon.ico
 ++Controllers
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\controllers\
 ++CommentController.cs
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\controllers\commentcontroller.cs
+++FriendController.cs
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\controllers\friendcontroller.cs
 ++HomeController.cs
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\controllers\homecontroller.cs
 ++PostController.cs
@@ -272,6 +268,8 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\controllers\usercontroller.cs
 ++Middleware
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\middleware\
+++ValidateUserSession.cs
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\middleware\validateusersession.cs
 ++Models
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\models\
 ++Views
@@ -280,11 +278,12 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\comment\
 ++Index.cshtml
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\comment\index.cshtml
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\friend\index.cshtml
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\post\index.cshtml
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\user\index.cshtml
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\home\index.cshtml
-++SaveComment.cshtml
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\comment\savecomment.cshtml
+++Friend
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\friend\
 ++Home
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\home\
 ++Delete.cshtml
@@ -318,24 +317,89 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 ++Startup.cs
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\startup.cs
 ++No se detectaron dependencias de servicio
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1768
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1840
 ++launchSettings.json
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\properties\launchsettings.json
-++1
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\
+++css
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\css\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\css\
+++Images
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\
+++js
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\js\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\js\
+++lib
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\
+++favicon.ico
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\favicon.ico
+++ErrorViewModel.cs
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\models\errorviewmodel.cs
+++Privacy.cshtml
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\home\privacy.cshtml
+++appsettings.Development.json
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\microsoft.aspnetcore.app
+++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (5.0.17)
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1897
+++System.Diagnostics.Tools (4.3.0)
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1898
+++site.css
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\css\site.css
+++Products
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\
+++site.js
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\js\site.js
+++bootstrap
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\
+++jquery
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\
+++jquery-validation
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation\
+++jquery-validation-unobtrusive
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation-unobtrusive\
+++1002
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1002\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1002\
+++1003
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1003\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1003\
+++1004
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1004\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1004\
 ++2
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\2\
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\2\
-++4
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\4\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\4\
+++3
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\3\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\3\
 ++5
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\5\
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\5\
 ++6
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\6\
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\6\
+++7
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\7\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\7\
+++8
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\8\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\8\
+++9
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\9\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\9\
+++1
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\
 ++10
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\10\
 ++11
@@ -364,67 +428,57 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\22\
 ++23
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\23\
-++3
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\3\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\3\
-++7
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\7\
-++8
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\8\
-++9
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\9\
-++site.js
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\js\site.js
-++bootstrap
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\
-++jquery
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\
-++jquery-validation
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation\
-++jquery-validation-unobtrusive
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation-unobtrusive\
-++ValidateUserSession.cs
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\middleware\validateusersession.cs
-++ErrorViewModel.cs
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\models\errorviewmodel.cs
-++Privacy.cshtml
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\views\home\privacy.cshtml
-++appsettings.Development.json
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\appsettings.development.json
-++Microsoft.AspNetCore.Analyzers
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-++Microsoft.AspNetCore.Components.Analyzers
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-++Microsoft.AspNetCore.Mvc.Analyzers
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.CodeAnalysis.Analyzers
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
-++Microsoft.CodeAnalysis.CSharp.Analyzers
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
-++Microsoft.AspNetCore.App
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\microsoft.aspnetcore.app
-++Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation (5.0.17)
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1828
-++System.Diagnostics.Tools (4.3.0)
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:>1829
-++454190e2-275e-4d38-bf84-9058fce6ec21.jpg
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1\454190e2-275e-4d38-bf84-9058fce6ec21.jpg
-++4d286453-6698-42c0-b530-0df68bfcc319.png
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1\4d286453-6698-42c0-b530-0df68bfcc319.png
-++7c78956d-e5f5-4695-a1f4-a98cf9e3d163.png
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1\7c78956d-e5f5-4695-a1f4-a98cf9e3d163.png
-++a1754876-575e-429e-ae8f-f292e078bb44.png
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1\a1754876-575e-429e-ae8f-f292e078bb44.png
+++4
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\4\
+++dist
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\dist\
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation\dist\
+++LICENSE
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\license
+++LICENSE.txt
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\license.txt
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation-unobtrusive\license.txt
+++LICENSE.md
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation\license.md
+++jquery.validate.unobtrusive.js
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+++8ffc5df8-7b7e-4d65-bb23-fad74218fdf4.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1002\8ffc5df8-7b7e-4d65-bb23-fad74218fdf4.png
+++23d1126c-30f4-43ee-b70c-5a84a1bc6245.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1003\23d1126c-30f4-43ee-b70c-5a84a1bc6245.png
+++ecd5d401-d66b-4941-a458-80534a1822f3.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1004\ecd5d401-d66b-4941-a458-80534a1822f3.png
 ++62dfb6da-9bbd-478c-91f0-3115ac257839.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\2\62dfb6da-9bbd-478c-91f0-3115ac257839.jpg
-++d7d60b9c-12c5-440b-ac93-0f84203d015d.png
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\4\d7d60b9c-12c5-440b-ac93-0f84203d015d.png
+++6889896c-8c05-4ba4-9100-383ede0e8456.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\2\6889896c-8c05-4ba4-9100-383ede0e8456.jpg
+++c5170ca0-eb99-436b-9066-6be10660375a.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\2\c5170ca0-eb99-436b-9066-6be10660375a.jpg
+++9955dc2c-0636-4898-ab83-e03b79834131.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\3\9955dc2c-0636-4898-ab83-e03b79834131.png
+++dd370cc9-0fb8-40c0-99b1-3153da9a5be6.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\3\dd370cc9-0fb8-40c0-99b1-3153da9a5be6.png
 ++3f51a507-3a91-4a62-a36d-1f3ce7acabea.png
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\5\3f51a507-3a91-4a62-a36d-1f3ce7acabea.png
+++8ee00e8a-4d12-486d-88fe-c43610766ffa.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\5\8ee00e8a-4d12-486d-88fe-c43610766ffa.jpg
 ++0bf60add-2049-49a1-a75b-c418002e46ee.png
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\6\0bf60add-2049-49a1-a75b-c418002e46ee.png
+++7ac0b8c1-f750-42e3-a03b-1f4598984816.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\6\7ac0b8c1-f750-42e3-a03b-1f4598984816.png
+++df8ced7e-973e-4a53-90f4-5a8830c8c794.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\7\df8ced7e-973e-4a53-90f4-5a8830c8c794.png
+++7fcf77c6-bd9b-4e8b-a6ae-bab0eeca5d62.jfif
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\8\7fcf77c6-bd9b-4e8b-a6ae-bab0eeca5d62.jfif
+++462ccc75-9a17-494b-adfd-77d078e2ed4a.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\9\462ccc75-9a17-494b-adfd-77d078e2ed4a.png
+++2674580e-3b17-41e6-a78d-e1647c0d506b.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\2674580e-3b17-41e6-a78d-e1647c0d506b.jpg
 ++3f126a04-3721-46f3-8d01-bad6163cde5f.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\3f126a04-3721-46f3-8d01-bad6163cde5f.jpg
+++8bbce22a-4aab-4df6-bc90-14fe9ade5ac2.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\8bbce22a-4aab-4df6-bc90-14fe9ade5ac2.jpg
 ++a47cf154-1213-42ca-a8b4-59128eca5723.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\a47cf154-1213-42ca-a8b4-59128eca5723.jpg
 ++ab74b0fe-fca6-46bc-b646-c5dae1fc5233.jpg
@@ -435,6 +489,8 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\c8dc1939-a26c-44fd-95f2-bd68955459e7.jpg
 ++ca854330-c597-42ef-b6dd-5cab5c15ccbc.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\ca854330-c597-42ef-b6dd-5cab5c15ccbc.jpg
+++cf8e5cfe-cea7-495e-bb7b-8e662969962d.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\cf8e5cfe-cea7-495e-bb7b-8e662969962d.png
 ++d14fb624-2a8d-4f9f-a364-04e3ad5d137a.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\d14fb624-2a8d-4f9f-a364-04e3ad5d137a.jpg
 ++d6dc9835-05c4-4fb0-979f-d7f4283ca263.jpg
@@ -447,6 +503,10 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\10\1c87ddbf-ba59-4045-9d38-b020a24dd13c.jfif
 ++d85e865e-a7bf-484f-b02a-eb0d1c3594b1.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\10\d85e865e-a7bf-484f-b02a-eb0d1c3594b1.jpg
+++0247935f-c1ae-4a1c-b3b0-74b81a4bf77d.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1002\0247935f-c1ae-4a1c-b3b0-74b81a4bf77d.jpg
+++0ec641b6-c59c-4133-9da5-739368e22e87.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1003\0ec641b6-c59c-4133-9da5-739368e22e87.jpg
 ++2880a0b2-c341-48db-9360-34cd25ae46c8.jpg
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\11\2880a0b2-c341-48db-9360-34cd25ae46c8.jpg
 ++4a26ae89-6f35-4b1d-af3e-f806fe795c19.jpg
@@ -499,6 +559,8 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\2\b8971042-6de2-425a-8b6b-1d1b47082c11.png
 ++df953db4-5355-4103-b220-541b69aaf7c8.png
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\2\df953db4-5355-4103-b220-541b69aaf7c8.png
+++e237ebc0-d0bb-49f8-bae3-2474d8fc0107.jpg
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\2\e237ebc0-d0bb-49f8-bae3-2474d8fc0107.jpg
 ++f6ca3e7d-282a-4867-884c-7a1d5f8fcc4d.png
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\2\f6ca3e7d-282a-4867-884c-7a1d5f8fcc4d.png
 ++2a3a6617-0911-4040-acf8-e3bd44ba8361.jpg
@@ -567,19 +629,6 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\9\c38a4b86-0b29-4d1b-a732-5835003df440.jpg
 ++eb0d8434-533b-4029-b3ad-c09f92f0a8b0.jfif
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\9\eb0d8434-533b-4029-b3ad-c09f92f0a8b0.jfif
-++dist
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\dist\
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation\dist\
-++LICENSE
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\license
-++LICENSE.txt
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\license.txt
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation-unobtrusive\license.txt
-++LICENSE.md
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation\license.md
-++jquery.validate.unobtrusive.js
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 ++jquery.js
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\jquery\dist\jquery.js
 ++additional-methods.js
@@ -636,25 +685,13 @@ i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programac
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
 ++bootstrap.bundle.min.js.map
 i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
-++20220706170006_Initial.cs
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\20220706170006_initial.cs
-++20220706170006_Initial.Designer.cs
-i:{9a944725-72b5-47ab-a306-0852bb080ca5}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.infrastructure.persistence\migrations\20220706170006_initial.designer.cs
-++8bbce22a-4aab-4df6-bc90-14fe9ade5ac2.jpg
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1\8bbce22a-4aab-4df6-bc90-14fe9ade5ac2.jpg
-++6a23943f-611b-483a-84d8-5c00981b6c65.png
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1\6a23943f-611b-483a-84d8-5c00981b6c65.png
-++6889896c-8c05-4ba4-9100-383ede0e8456.jpg
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\2\6889896c-8c05-4ba4-9100-383ede0e8456.jpg
-++dd370cc9-0fb8-40c0-99b1-3153da9a5be6.png
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\3\dd370cc9-0fb8-40c0-99b1-3153da9a5be6.png
-++7c265b8c-ef03-4732-a5a8-63ffbf0bb200.jpg
-i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\4\7c265b8c-ef03-4732-a5a8-63ffbf0bb200.jpg
-++NewFolder
-++Friends
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\friends\
-++SaveFriendViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\friends\savefriendviewmodel.cs
-++SaveFriendViewModel - Copia.cs
-++FriendViewModel.cs
-i:{2f0b31e5-2433-4c64-9051-f4d2610f8155}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social.core.application\viewmodels\friends\friendviewmodel.cs
+++435e78bd-a540-4d8c-a9b2-1043cbc9266e.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\users\1004\435e78bd-a540-4d8c-a9b2-1043cbc9266e.png
+++1005
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1005\
+++89be961d-f597-40a4-b894-56b0bed0e246.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1005\89be961d-f597-40a4-b894-56b0bed0e246.png
+++1006
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1006\
+++1ee75caf-0872-40cf-92ae-f84a67e9825a.png
+i:{4cec7d75-7acf-4a1d-a2a9-f46cd71a8d07}:c:\users\eleikel\desktop\itla\programacion iii\mini proyecto red social\red-social\red-social\wwwroot\images\products\1006\1ee75caf-0872-40cf-92ae-f84a67e9825a.png

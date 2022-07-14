@@ -43,7 +43,7 @@ namespace Red_Social.Infrastructure.Persistence.Repository
             string passwordEncrypt = PasswordEncryption.ComputedSha256Hash(loginVm.Password);
 
             User user = await _dbContext.Set<User>()
-                .FirstOrDefaultAsync(user => user.Username == loginVm.Username && user.Password == passwordEncrypt);
+                .FirstOrDefaultAsync(user => user.Username == loginVm.Username && user.Password == passwordEncrypt );
             return user;
         }
 
@@ -51,6 +51,19 @@ namespace Red_Social.Infrastructure.Persistence.Repository
         public async Task<bool> ExistAync(string usuario)
         {
             return await _dbContext.Set<User>().AnyAsync(c => c.Username.ToLower().Trim() == usuario.ToLower().Trim());                      
+        }
+
+        //Get my user with friends
+        public async Task<User> GetByIdWithIncludes(int id, List<string> list)
+        {
+            var query = await _dbContext.Set<User>().FindAsync(id);
+
+            foreach (string property in list)
+            {
+                _dbContext.Entry(query).Collection(property).Load();
+            }
+
+            return query;
         }
     }
 }
